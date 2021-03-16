@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Form Input-->
+<html>
+    <head></head>
+    <script language="Javascript">
+        
+        //kelas fungsi test
+        function test (){
+            //menentukan nilai dari val1
+            var val1=document.kirim. T1.value
+            //jika nilai nilai mod 2 hasilnya 0 maka genap
+            if(val1%2==0)
+            document.kirim.T2.value="bilangan genap"
+            
+            //jika tidak bilangan tersebut ganjil
+            else
+            document.kirim.T2.value="bilangan ganjil"
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            
+            <p>
+                BIL 
+                <!--Input Nilai val1 berupa T1-->
+                <input type="text" name="T1" size="20"> MERUPAKAN BIL 
+                <input type="text" name="T2" size="20">
+            </p>
+            
+            <!--Tombol untuk menebak (menjalankan fungsi test)-->
+            <p>
+                <input type="button" value="TEBAK" name="B1" onclick=test()>
+            </p>
+        </form>
+    </body>
+</html>

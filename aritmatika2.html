@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Judul-->
+        <title>Contoh Program Javascript</title>
+    </head>
+
+    <script language="Javascript">
+        //Untuk operasi penghitungan value1 dan value2
+        function test (val1,val2){
+            //Operasi perkalian
+            document.write("<br>"+"Perkalian : val1*val2 "+"<br>")
+            document.write(val1*val2)
+            //operasi pembagian
+            document.write("<br>"+"Pembagian : val1/val2 "+"<br>")
+            document.write(val1/val2)
+            //operasi penjumlahan
+            document.write("<br>"+"Penjumlahan : val1+val2 "+"<br>")
+            document.write(val1+val2)
+            //Operasi pengurangan
+            document.write("<br"+"Pengurangan : val1-val2 "+"<br>")
+            document.write(val1-val2)
+            //Operasi Modulus
+            document.write("<br>"+"Modulus : val1%val2 "+"<br>")
+            document.write(val1%val2)
+        }
+    </script>
+    
+    <body>
+        <!--Button untuk menghitung value-->
+        <input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
+    </body>
+</html>

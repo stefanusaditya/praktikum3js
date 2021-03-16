@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--PROGRAM KALKULATOR-->
+<html>
+    <head>
+        <title>Latihan 2 JS : Kalkulator</title>
+    </head>
+    
+    <!--Kode JS-->
+    <script language="JavaScript">
+        //FUNGSI JUMLAH
+        function jumlah (){
+            var angka1=parseFloat(document.hitung.bil1.value);
+            var angka2=parseFloat(document.hitung.bil2.value);
+            var hasilhitung=angka1+angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+        //FUNGSI KURANG
+        function kurang (){
+            var angka1=parseFloat(document.hitung.bil1.value);
+            var angka2=parseFloat(document.hitung.bil2.value);
+            var hasilhitung=angka1-angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+        //FUNGSI KALI
+        function kali (){
+            var angka1=parseFloat(document.hitung.bil1.value);
+            var angka2=parseFloat(document.hitung.bil2.value);
+            var hasilhitung=angka1*angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+        //FUNGSI BAGI
+        function bagi (){
+            var angka1=parseFloat(document.hitung.bil1.value);
+            var angka2=parseFloat(document.hitung.bil2.value);
+            var hasilhitung=angka1/angka2;
+            document.hitung.hasil.value=hasilhitung;
+        }
+    </script>
+
+    <body>
+        <h2>Kalkulator Sederhana</h2>
+        <form method="POST" name="hitung">
+            <p>Silahkan isikan pada kolom 1 untuk input bilangan pertama, kolom
+                kedua untuk inpu bilangan kedua!
+            </p><br>
+
+            <!--Kolom Input BILANGAN -->
+            <p>Masukkan Bilangan 1</p>
+            <input type="text" name="bil1">
+            <p>Masukkan Bilangan 2</p>
+            <input type="text" name="bil2"><br><br>
+            Pilih operasi hitung :
+            <!--Button-->
+            <!--Tombol Plus-->
+            <input type="button" value="+" name="jmlh" onclick=jumlah()>
+            <!--Tombol Kurang-->
+            <input type="button" value="-" name="krng" onclick=kurang()>
+            <!--Tombol Kali-->
+            <input type="button" value="x" name="kli" onclick=kali()>
+            <!--Tombol Bagu-->
+            <input type="button" value=" : " name="bgi" onclick=bagi()>
+            <br><br>
+            
+            <!--Kolom Hasil Hitung Ditampung disini-->
+            Hasil : 
+            <input type="text" name="hasil">      
+        </form>
+    </body>
+</html>
